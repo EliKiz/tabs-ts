@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import {getService} from "../service/DataService"
 import Loading from '../components/Loading'
 
-type itemsData = { 
+type ItemsData = { 
     id: string,
     order: number,
     title: string,
@@ -17,7 +17,7 @@ type propsState = {
 }
 
 const TabsButton = ({setValue, value}:propsState) =>  {
-    const [button, setButton] = useState<itemsData[]>([])
+    const [button, setButton] = useState<ItemsData[]>([])
     const [load, setLoad] = useState(true)
     
 
